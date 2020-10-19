@@ -1,2 +1,201 @@
 .p-contact {
 }
+body,h1,h2,h3,figure,input,textarea,ul,li,a,p{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  text-align: center;
+  font-family:'Vollkorn', "Noto Serif JP", sans-serif;
+  color: #222222;
+  line-height: 32px;
+}
+main{
+  margin:0 40px 200px ;
+}
+main section .m-contact{
+  margin-bottom: 50px;
+}
+main section .m-contact span{
+  font-weight: bold;
+  font-size: 18px;
+}
+.background{
+  width: 100%;
+  height: 0;
+  padding-top: calc(300 / 1000 * 100%);
+  background: url(./image/contact_01.jpg) center center / cover no-repeat;
+  margin-bottom: 80px;
+}
+h2{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 60px;
+  font-size: 24px;
+  font-family: Vollkorn;
+}
+h2:before{
+  content:"";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  -webkit-transform: translateX(-50%);
+  transform: translate(-50%);
+  background:#00478B;
+}
+.m-co-table .m-co-list{
+  display:flex;
+  justify-content: center;
+  height:auto;
+  width:100%;
+  margin-bottom:30px;
+}
+.m-co-table .m-co-list form{
+  width: 720px;
+  height: auto;
+  background:#E8E1D3;
+}
+.m-co-table .m-co-list .m-co-content{
+  background:#00478B;
+  color:white;
+  margin: 0 20px 0 0;
+  text-align: left;
+  padding-left:10px;
+  padding-top:10px;
+  width: 30%;
+  max-width:260px;
+}
+.m-co-table .m-co-list .m-co-input{
+  border: none;
+  background:#E8E1D3;
+  width: 100%;
+  height:50px;
+  max-width:720px;
+}
+.m-co-table .m-co-list-lg{
+  display:flex;
+  justify-content: center;
+  height:180px;
+  width:100%;
+  margin-bottom:30px;
+}
+.m-co-table .m-co-list-lg .m-co-content-lg{
+  background:#00478B;
+  color:white;
+  margin: 0 20px 0 0;
+  text-align: left;
+  padding-left:10px;
+  padding-top:10px;
+  width: 30%;
+  max-width: 260px;
+}
+.m-co-table .m-co-list-lg form{
+  width: 720px;
+}
+.m-co-table .m-co-list-lg .m-co-input-lg{
+  border: none;
+  background:#E8E1D3;
+  width: 100%;
+  height:180px;
+}
+section .privacy {
+  margin: 20px 0;
+}
+#checkbox{
+  margin: 5px;
+}
+.m-send-mail{
+  width: 350px;
+  height: 50px;
+  background: white;
+  color: #222222;
+  border: 1px solid black;
+}
+
+@media only screen and (min-width:577px) and (max-width:1000px) {
+  /* （ここにタブレット用スタイルを記述） */
+  body{
+    font-size: calc(12px + ((1vw - 5.76px)*(8/4.24)));
+    }
+  h2{
+    font-size: calc(17px + ((1vw - 5.76px)*(13/4.24)));
+    }
+  main section .m-contact span{
+    font-size: calc(13px + ((1vw - 5.76px)*(9/4.24)));
+    }
+  .m-co-table .m-co-list .m-co-input{
+    font-size: calc(12px + ((1vw - 5.76px)*(8/4.24)));
+    }
+  .m-co-table .m-co-list .m-co-content, .m-co-table .m-co-list-lg .m-co-content-lg{
+    font-size: 16px;
+    }
+  }
+@media screen and (max-width: 576px) {
+  /* （ここにモバイル用スタイルを記述） */
+  body{
+    font-size: calc(20px + ((1vw - 5.76px)*(3/0.96)));
+    }
+  h2{
+    font-size: calc(30px + ((1vw - 5.76px)*(5/0.96)));
+    }
+  main section .m-contact span{
+    font-size: calc(23px + ((1vw - 5.76px)*(3/0.96)));
+    }
+  .m-co-table .m-co-list{
+    display:block;
+    height:auto;
+    width:100%;
+    margin-bottom:30px;
+    }
+  .m-co-table .m-co-list .m-co-content{
+    font-size: 16px;
+    background:#00478B;
+    color:white;
+    margin:0;
+    text-align: left;
+    padding-left:10px;
+    padding-top:5px;
+    width: 100%;
+    max-width:none;
+    }  
+  .m-co-table .m-co-list form{
+    width: 100%;
+    }    
+  .m-co-table .m-co-list .m-co-input{
+    font-size: calc(20px + ((1vw - 5.76px)*(3/0.96)));
+    padding-left:10px;
+  }
+  .m-co-table .m-co-list-lg{
+    display:block;
+      height:auto;
+      width:100%;
+      margin-bottom:30px;
+    }
+    .m-co-table .m-co-list-lg .m-co-content-lg{
+      background:#00478B;
+      color:white;
+      margin:0;
+      text-align: left;
+      padding-left:10px;
+      padding-top:5px;
+      width: 100%;
+      max-width: none;
+    }
+    .m-co-table .m-co-list-lg form{
+      width:100%;
+    }
+    .m-co-table .m-co-list-lg .m-co-input-lg{
+      border: none;
+      background:#E8E1D3;
+      width: 100%;
+      height:180px;
+      padding-left:10px;
+    }
+    .m-co-table .m-co-list-lg .m-co-content-lg{
+      font-size: 16px;
+    }
+  }
