@@ -1,2 +1,351 @@
-.p-areaguide {
+.p-areaguide__img {
+  margin-top: 80px;
+
+  &-body {
+    width: 100%;
+    height: 60vh;
+    background-image: url('/asset/image/areaguide_01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @include pc-layout() {
+    
+    &-body {
+      height: 60vh;
+    }
+  }
+
+  @include tab-layout() {
+
+    &-body {
+      height: 56vh;
+    }
+  }
+
+  @include sp-layout() {
+    margin-bottom: 50px;
+  }
+}
+
+.p-areaguide__areaguide {
+  margin-top: 72px;
+  text-align: center;
+
+  @include sp-layout() {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 48px;
+  }
+}
+
+.p-areaguide__ttl{
+
+  h2 {
+    position: relative;
+  }
+
+  h2:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    display: inline-block;
+    height: 2px;
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 2px;
+  }
+
+  @include pc-layout() {
+
+    h2 {
+      margin-bottom: 57px;
+      @include font-size(27);
+    }
+
+    h2:before {
+      width: 40px;
+      bottom: -2px;
+    }
+  }
+
+  @include tab-layout() {
+
+    h2 {
+      margin-bottom: 5vw;
+      font-size: 3.3vw;
+    }
+
+    h2:before {
+      width: 4vw;
+      bottom: -0.2vw;
+    }
+  }
+
+  @include sp-layout() {
+    width: 90%;
+    margin: 0 auto;
+
+    h2 {
+      margin-bottom: 6.5vw;
+      font-size: 6.5vw;
+    }
+
+    h2:before {
+      width: 7vw;
+      bottom: -0.2vw;
+    }
+  }
+}
+
+.p-areaguide__areaguide-content {
+
+  :nth-child(1) {
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  @include pc-layout(){
+    
+    :nth-child(1) {
+      @include font-size(18);
+    }
+  }
+
+  @include tab-layout() {
+    
+    :nth-child(1) {
+      font-size: 2.24vw;
+    }
+
+    :nth-child(2) {
+      font-size: 2vw;
+    }
+  }
+
+  @include sp-layout() {
+    
+    :nth-child(1) {
+      margin-bottom: 3.2vw;
+      font-size: 4.5vw;
+    }
+
+    :nth-child(2) {
+      font-size: 4vw;
+    }
+  }
+}
+
+.p-areaguide__areamap {
+  margin-top: 57px;
+
+  @include sp-layout() {
+    margin-top: 4.7vw;
+  }
+}
+
+.p-areaguide__ttl {
+  text-align: center;
+}
+
+.p-areaguide__areamap-map-img {
+  text-align: center;
+
+  @include pc-layout() {
+    img {
+      width: 614px;
+    }
+  }
+  
+  @include tab-layout() {
+
+    img {
+      width: 56vw;
+    }
+  }
+
+  @include sp-layout() {
+
+    img {
+      width: 54.2vw;
+    }
+  }
+}
+
+.p-areaguide__areamap-around-wrap--north {
+  
+  @include pc-layout() {
+    margin-top: 35px;
+  }
+
+  @include tab-layout() {
+    margin-top: 3.6vw;
+  }
+}
+
+.p-areaguide__areamap-around-wrap--south {
+
+  p {
+    width: 28.5vw;
+  }
+
+  @include pc-layout() {
+    margin-bottom: 148px;
+
+    p {
+      max-width: 309.2px;
+    }
+  }
+
+  @include tab-layout() {
+    margin-bottom: 7.7vw;
+  }
+
+  @include sp-layout() {
+    width: 100%;
+    margin-bottom: 8vw;
+
+    p {
+      width: 100%;
+    }
+  }
+}
+
+.p-areaguide__areamap-around-ttl {
+  text-align: center;
+
+  @include pc-layout() {
+    
+    h3 {
+      @include font-size(18);
+    }
+  }
+
+
+  @include tab-layout() {
+
+    h3 {
+      font-size: 2.3vw;
+    }
+  }
+
+  @include sp-layout() {
+
+    h3 {
+      font-size: 4.5vw;
+    }
+  }
+}
+
+.p-areaguide__areamap-around {
+  max-width: 1024px;
+  margin: 0 auto;
+  
+  @include pc-layout() {
+    width: 95%;
+  }
+
+  @include tab-layout() {
+    width: 94%;
+  }
+
+  @include sp-layout() {
+    width: 90%;
+  }
+}
+
+.p-areaguide__areamap-around-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 33px;
+
+  @include sp-layout() {
+    flex-direction: column;
+    margin-top: 3.7vw;
+  }
+}
+
+.p-areaguide__areamap-around-contents {
+  :nth-child(2) {
+    font-weight: bold;
+  }
+
+  @include pc-layout() {
+    
+    img {
+      width: 308px;
+    }
+  }
+
+  @include tab-layout() {
+    
+    img {
+      width: 27.9vw;
+    }
+
+    :nth-child(3) {
+      font-size: 2vw;
+    }
+  }
+
+  @include sp-layout() {
+    margin-bottom: 5vw;
+
+    img {
+      width: 90vw;
+    }
+
+    :nth-child(3) {
+      width: 100%;
+      margin: 0 auto;
+      font-size: 4vw;
+    }
+  }
+}
+
+.p-areaguide__areamap-around-contents--oosaka-capital {
+  
+  @include sp-layout() {
+    margin-bottom: 0;
+  }
+}
+
+.p-area__areaguide-around--oosaka-paragraph {
+  width: 28.7vw;
+  
+  @include pc-layout() {
+    max-width: 307px;
+  }
+
+  @include sp-layout() {
+    max-width: auto;
+    width: 100%;
+  }
+}
+
+.p-area__areaguide-around--sky-paragraph {
+  width: 28.6vw;
+  
+  @include pc-layout() {
+    max-width: 306px;
+  }
+
+  @include sp-layout() {
+    max-width: auto;
+    width: 100%;
+  }
+}
+
+.p-area__areaguide-around--capital-paragraph {
+  width: 28.6vw;
+  
+  @include pc-layout() {
+    max-width: 309px;
+  }
+
+  @include sp-layout() {
+    max-width: auto;
+    width: 100%;
+  }
 }
