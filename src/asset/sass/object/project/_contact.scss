@@ -1,4 +1,12 @@
 .p-contact {
+  margin:0 40px 200px ;
+}
+.p-contact section .m-contact{
+  margin-bottom: 50px;
+}
+.p-contact section .m-contact span{
+  font-weight: bold;
+  font-size: 18px;
 }
 body,h1,h2,h3,figure,input,textarea,ul,li,a,p{
   margin: 0;
@@ -11,16 +19,8 @@ body{
   color: #222222;
   line-height: 32px;
 }
-main{
-  margin:0 40px 200px ;
-}
-main section .m-contact{
-  margin-bottom: 50px;
-}
-main section .m-contact span{
-  font-weight: bold;
-  font-size: 18px;
-}
+// main{
+// }
 .background{
   width: 100%;
   height: 0;
@@ -33,19 +33,18 @@ h2{
   display: inline-block;
   margin-bottom: 60px;
   font-size: 24px;
-  font-family: Vollkorn;
-}
-h2:before{
-  content:"";
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  display: inline-block;
-  width: 40px;
-  height: 2px;
-  -webkit-transform: translateX(-50%);
-  transform: translate(-50%);
-  background:#00478B;
+  font-family: "Vollkorn";
+    &:before{
+      content:"";
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      display: inline-block;
+      width: 40px;
+      height: 2px;
+      -webkit-transform: translateX(-50%);
+      transform: translate(-50%);
+      background:$color-primary;
 }
 .m-co-table .m-co-list{
   display:flex;
