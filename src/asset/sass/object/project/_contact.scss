@@ -23,7 +23,7 @@ body{
   width: 100%;
   height: 0;
   padding-top: calc(300 / 1000 * 100%);
-  background: url(./image/contact_01.jpg) center center / cover no-repeat;
+  background: url(../../../image/contact_01.jpg) center center / cover no-repeat;
   margin-bottom: 80px;
 }
 h2{
@@ -96,7 +96,7 @@ h2{
 }
 .m-co-table .m-co-list-lg .m-co-input-lg{
   border: none;
-  background:$color-primary;
+  background:#e8e1de;
   width: 100%;
   height:180px;
 }
@@ -188,7 +188,7 @@ section .privacy {
     }
     .m-co-table .m-co-list-lg .m-co-input-lg{
       border: none;
-      background:$color-primary;
+      background: #e8e1de;
       width: 100%;
       height:180px;
       padding-left:10px;
