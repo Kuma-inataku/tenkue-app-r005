@@ -32,6 +32,18 @@ h2{
   margin-bottom: 60px;
   font-size: 24px;
   font-family: Vollkorn;
+    &:before{
+      content:"";
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      display: inline-block;
+      width: 40px;
+      height: 2px;
+      -webkit-transform: translateX(-50%);
+      transform: translate(-50%);
+      background:$color-primary;
+    }
 }
 h2:before{
   content:"";
@@ -43,7 +55,7 @@ h2:before{
   height: 2px;
   -webkit-transform: translateX(-50%);
   transform: translate(-50%);
-  background:#00478B;
+  background:$color-primary;
 }
 .m-co-table .m-co-list{
   display:flex;
@@ -55,10 +67,10 @@ h2:before{
 .m-co-table .m-co-list form{
   width: 720px;
   height: auto;
-  background:#E8E1D3;
+  background:$color-primary;
 }
 .m-co-table .m-co-list .m-co-content{
-  background:#00478B;
+  background:$color-primary;
   color:white;
   margin: 0 20px 0 0;
   text-align: left;
@@ -69,7 +81,7 @@ h2:before{
 }
 .m-co-table .m-co-list .m-co-input{
   border: none;
-  background:#E8E1D3;
+  background:$color-primary;
   width: 100%;
   height:50px;
   max-width:720px;
@@ -82,7 +94,7 @@ h2:before{
   margin-bottom:30px;
 }
 .m-co-table .m-co-list-lg .m-co-content-lg{
-  background:#00478B;
+  background:$color-primary;
   color:white;
   margin: 0 20px 0 0;
   text-align: left;
@@ -96,7 +108,7 @@ h2:before{
 }
 .m-co-table .m-co-list-lg .m-co-input-lg{
   border: none;
-  background:#E8E1D3;
+  background:$color-primary;
   width: 100%;
   height:180px;
 }
@@ -109,7 +121,7 @@ section .privacy {
 .m-send-mail{
   width: 350px;
   height: 50px;
-  background: white;
+  background:$color-primary;
   color: #222222;
   border: 1px solid black;
 }
@@ -151,7 +163,7 @@ section .privacy {
     }
   .m-co-table .m-co-list .m-co-content{
     font-size: 16px;
-    background:#00478B;
+    background:$color-primary;
     color:white;
     margin:0;
     text-align: left;
@@ -174,7 +186,7 @@ section .privacy {
       margin-bottom:30px;
     }
     .m-co-table .m-co-list-lg .m-co-content-lg{
-      background:#00478B;
+      background:$color-primary;
       color:white;
       margin:0;
       text-align: left;
@@ -188,7 +200,7 @@ section .privacy {
     }
     .m-co-table .m-co-list-lg .m-co-input-lg{
       border: none;
-      background:#E8E1D3;
+      background:$color-primary;
       width: 100%;
       height:180px;
       padding-left:10px;
