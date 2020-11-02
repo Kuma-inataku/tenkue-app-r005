@@ -1,5 +1,5 @@
 .p-contact {
-  margin:0 40px 200px ;
+  margin-bottom:200px ;
 }
 .p-contact section .m-contact{
   margin-bottom: 50px;
@@ -22,8 +22,8 @@ body{
 .background{
   width: 100%;
   height: 0;
-  padding-top: calc(300 / 1000 * 100%);
-  background: url(./image/contact_01.jpg) center center / cover no-repeat;
+  padding-top: calc(500 / 1000 * 100%);
+  background: url(/asset/image/contact_01.jpg) center center / cover no-repeat;
   margin-bottom: 80px;
 }
 h2{
@@ -45,18 +45,6 @@ h2{
       background:$color-primary;
     }
 }
-h2:before{
-  content:"";
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  display: inline-block;
-  width: 40px;
-  height: 2px;
-  -webkit-transform: translateX(-50%);
-  transform: translate(-50%);
-  background:$color-primary;
-}
 .m-co-table .m-co-list{
   display:flex;
   justify-content: center;
@@ -67,7 +55,7 @@ h2:before{
 .m-co-table .m-co-list form{
   width: 720px;
   height: auto;
-  background:$color-primary;
+  background:$color-gold;
 }
 .m-co-table .m-co-list .m-co-content{
   background:$color-primary;
@@ -81,7 +69,7 @@ h2:before{
 }
 .m-co-table .m-co-list .m-co-input{
   border: none;
-  background:$color-primary;
+  background: $color-gold;
   width: 100%;
   height:50px;
   max-width:720px;
@@ -108,7 +96,7 @@ h2:before{
 }
 .m-co-table .m-co-list-lg .m-co-input-lg{
   border: none;
-  background:$color-primary;
+  background:$color-gold;
   width: 100%;
   height:180px;
 }
@@ -121,7 +109,7 @@ section .privacy {
 .m-send-mail{
   width: 350px;
   height: 50px;
-  background:$color-primary;
+  background: $color-light;
   color: #222222;
   border: 1px solid black;
 }
@@ -200,7 +188,7 @@ section .privacy {
     }
     .m-co-table .m-co-list-lg .m-co-input-lg{
       border: none;
-      background:$color-primary;
+      background: #e8e1de;
       width: 100%;
       height:180px;
       padding-left:10px;
