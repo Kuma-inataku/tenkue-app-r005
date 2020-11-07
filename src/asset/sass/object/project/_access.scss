@@ -1,196 +1,106 @@
 .p-access {
-  margin: 0px;
+    margin: 0px;
 }
-body,h1,h2,h3,figure,ul,li,a,p{
-  margin: 0;
-  padding: 0;
+body,
+h1,
+h2,
+h3,
+figure,
+ul,
+li,
+a,
+p {
+    margin: 0;
+    padding: 0;
 }
-body{
-  width: 100%;
-  text-align: center;
-  font-family:"Vollkorn", "Noto Serif JP", sans-serif;
-  color: #222222;
-  line-height: 32px;
+body {
+    width: 100%;
+    text-align: center;
+    font-family: 'Vollkorn', 'Noto Serif JP', sans-serif;
+    color: #222222;
+    line-height: 32px;
 }
-header{
-  margin-bottom: 90px;
+header {
+    margin-bottom: 90px;
 }
-.back-ground{
-  width: 100%;
-  height: 0;
-  padding-top: calc(500 / 1000 * 100%);
-  background: url(/asset/image/access_01.jpg) center center / cover no-repeat;
+.back-ground {
+    width: 100%;
+    height: 0;
+    padding-top: calc(500 / 1000 * 100%);
+    background: url(/asset/image/access_01.jpg) center center / cover no-repeat;
 }
-.m-location-map{
-  margin-bottom:70px;
+.m-location-map {
+    margin-bottom: 70px;
 }
-h2{
-  position: relative;
-  display: inline-block;
-  margin-bottom: 60px;
-  font-size: 24px;
-  font-family: "Vollkorn";
-    &:before{
-      content:"";
-      position: absolute;
-      left: 50%;
-      bottom: -10px;
-      display: inline-block;
-      width: 40px;
-      height: 2px;
-      -webkit-transform: translateX(-50%);
-      transform: translate(-50%);
-      background:$color-primary;
+h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 60px;
+    font-size: 24px;
+    font-family: 'Vollkorn';
+    &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        display: inline-block;
+        width: 40px;
+        height: 2px;
+        -webkit-transform: translateX(-50%);
+        transform: translate(-50%);
+        background: $color-primary;
     }
 }
-.m-map-image{
-  margin-bottom:50px;
-  width: 100%;
+.m-map-image {
+    margin-bottom: 50px;
+    width: 100%;
 }
-.m-map-image-gallery{
-  display:flex;
-  justify-content: center;
+.m-map-image-gallery {
+    display: flex;
+    justify-content: center;
 }
-.m-map-image-gallery li{
-  text-decoration: none;
-  display: block;
-  margin:0 10px;
+.m-map-image-gallery li {
+    text-decoration: none;
+    display: block;
+    margin: 0 10px;
 }
-.m-map-image-gallery li img{
-  width:250px;
-  max-width:100%;
-  height: auto;  
+.m-map-image-gallery li img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
 }
-.m-access{
-  margin:0 10px 200px;
+.m-access {
+    margin: 0 10px 200px;
 }
-.m-access .m-access-map{
-  max-width: 1030px;
-  width: 100%;
-  margin: 0 auto;
+.m-access .m-access-map {
+    max-width: 1030px;
+    width: 100%;
+    margin: 0 auto;
 }
-.m-access .m-access-content{
-  text-align:left;
-  width: auto;
+.m-access .m-access-content {
+    text-align: left;
+    width: auto;
 }
-.m-access .m-access-content .m-access-subtitle{
-  font-weight: bold;
+.m-access .m-access-content .m-access-subtitle {
+    font-weight: bold;
 }
 
-@media only screen and (min-width:577px) and (max-width:1000px) {
-  /* （ここにタブレット用スタイルを記述） */
-  body{
-    font-size: calc(12px + ((1vw - 5.76px)*(8/4.24)));
-  }
-  h2{
-    font-size: calc(20px + ((1vw - 5.76px)*(10/4.24)));
+@media only screen and (min-width: 577px) and (max-width: 1000px) {
+    /* （ここにタブレット用スタイルを記述） */
+    body {
+        font-size: calc(12px + ((1vw - 5.76px) * (8 / 4.24)));
     }
-  }
-
-@media screen and (max-width: 576px) {
-  /* （ここにモバイル用スタイルを記述） */
-  body{
-    font-size: calc(20px + ((1vw - 4.8px)*(3/0.96)));
-  }
-  h2{
-    font-size: calc(30px + ((1vw - 4.8px)*(4/0.96)));
-    }
-=======
-.p-access {
-  margin: 0px;
-}
-body,h1,h2,h3,figure,ul,li,a,p{
-  margin: 0;
-  padding: 0;
-}
-body{
-  width: 100%;
-  text-align: center;
-  font-family:"Vollkorn", "Noto Serif JP", sans-serif;
-  color: #222222;
-  line-height: 32px;
-}
-header{
-  margin-bottom: 90px;
-}
-.back-ground{
-  width: 100%;
-  height: 0;
-  padding-top: calc(500 / 1000 * 100%);
-  background: url(/asset/image/access_01.jpg) center center / cover no-repeat;
-}
-.m-location-map{
-  margin-bottom:70px;
-}
-h2{
-  position: relative;
-  display: inline-block;
-  margin-bottom: 60px;
-  font-size: 24px;
-  font-family: "Vollkorn";
-    &:before{
-      content:"";
-      position: absolute;
-      left: 50%;
-      bottom: -10px;
-      display: inline-block;
-      width: 40px;
-      height: 2px;
-      -webkit-transform: translateX(-50%);
-      transform: translate(-50%);
-      background:$color-primary;
+    h2 {
+        font-size: calc(20px + ((1vw - 5.76px) * (10 / 4.24)));
     }
 }
-.m-map-image{
-  margin-bottom:50px;
-  width: 100%;
-}
-.m-map-image-gallery{
-  display:flex;
-  justify-content: center;
-}
-.m-map-image-gallery li{
-  text-decoration: none;
-  display: block;
-  margin:0 10px;
-}
-.m-map-image-gallery li img{
-  width:250px;
-  max-width:100%;
-  height: auto;  
-}
-.m-access{
-  margin:0 10px 200px;
-}
-.m-access .m-access-map{
-  max-width: 1030px;
-  width: 100%;
-  margin: 0 auto;
-}
-.m-access .m-access-content{
-  text-align:left;
-  width: auto;
-}
-.m-access .m-access-content .m-access-subtitle{
-  font-weight: bold;
-}
-
-@media only screen and (min-width:577px) and (max-width:1000px) {
-  /* （ここにタブレット用スタイルを記述） */
-  body{
-    font-size: calc(12px + ((1vw - 5.76px)*(8/4.24)));
-  }
-  h2{
-    font-size: calc(20px + ((1vw - 5.76px)*(10/4.24)));
-    }
-  }
 
 @media screen and (max-width: 576px) {
-  /* （ここにモバイル用スタイルを記述） */
-  body{
-    font-size: calc(20px + ((1vw - 4.8px)*(3/0.96)));
-  }
-  h2{
-    font-size: calc(30px + ((1vw - 4.8px)*(4/0.96)));
+    /* （ここにモバイル用スタイルを記述） */
+    body {
+        font-size: calc(20px + ((1vw - 4.8px) * (3 / 0.96)));
     }
-  }
+    h2 {
+        font-size: calc(30px + ((1vw - 4.8px) * (4 / 0.96)));
+    }
+}
