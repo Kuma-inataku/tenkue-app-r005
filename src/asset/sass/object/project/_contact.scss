@@ -32,7 +32,7 @@ h2{
   margin-bottom: 60px;
   font-size: 24px;
   font-family: Vollkorn;
-    &:before{
+    &::before{
       content:"";
       position: absolute;
       left: 50%;
