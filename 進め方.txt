@@ -1,0 +1,8 @@
+2tenkue~
+・リモートリポジトリ通りに変更する
+・index.ejsのhtmlにスタイル当てているの修正
+　⇒body,h1,h2も同様
+・ACCESSでCONTACTの画像がでる理由確認(scss理解)
+
+ npm run startで確認
+　・前回修正点は治っているか？
